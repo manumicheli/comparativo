@@ -1,0 +1,26 @@
+do{
+var a = parseFloat(prompt('Insira o valor da alcool'));
+var g = parseFloat(prompt('Insira o valor da gasolina'));
+
+var res = parseFloat(a / g);
+
+
+
+if(res > 0.7) {
+ alert ('Abasteça com Gasolina!')
+}
+
+if(res < 0.7){
+ alert ('Abasteça com Alcool!')
+}
+
+if(res == 0.7){
+ alert ('Empatou! Escolha Alcool ou Gasolina!')
+}
+ 
+alert('O resultado é ' + res);
+  
+
+var perg = parseInt(prompt('Deseja efetuar um novo calculo? Digite 1 para "Sim" e 0 para "Não":'))
+
+}while(perg != 0)
